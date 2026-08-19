@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Palak Bhuria | Digital Marketing & Operations</title>
+
+<meta name="description" content="Portfolio of Palak Bhuria — MBA student specializing in Digital Marketing and Operations.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+    --bg: #071A1F;
+    --bg-soft: #0B252A;
+    --card: rgba(18, 48, 53, 0.72);
+    --card-hover: rgba(24, 61, 66, 0.9);
+
+    --text: #F3F8F6;
+    --muted: #9CB2AE;
+
+    --mint: #6EF7C8;
+    --mint-dark: #35BFA0;
+
+    --lavender: #B8A4FF;
+    --purple: #8E7CF5;
+
+    --border: rgba(255,255,255,0.10);
+
+    --shadow: 0 20px 60px rgba(0,0,0,0.30);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background:
+        radial-gradient(circle at 15% 10%, rgba(110,247,200,0.08), transparent 25%),
+        radial-gradient(circle at 85% 30%, rgba(184,164,255,0.10), transparent 28%),
+        var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+body.light {
+    --bg: #F3F8F6;
+    --bg-soft: #E7F2EF;
+    --card: rgba(255,255,255,0.78);
+    --card-hover: #ffffff;
+    --text: #10272A;
+    --muted: #58706D;
+    --border: rgba(16,39,42,0.12);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: min(1120px, 90%);
+    margin: auto;
+}
+
+/* ================= NAVBAR ================= */
+
+nav {
+    position: fixed;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(1080px, 92%);
+    padding: 12px 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(7,26,31,0.72);
+    backdrop-filter: blur(18px);
+
+    border: 1px solid var(--border);
+    border-radius: 18px;
+
+    z-index: 1000;
+    box-shadow: var(--shadow);
+}
+
+body.light nav {
+    background: rgba(255,255,255,0.75);
+}
+
+.logo {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: var(--mint);
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.nav-links a {
+    font-size: 13px;
+    color: var(--muted);
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--mint);
+}
+
+.theme-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    position: relative;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 14px;
+    border: 1px solid rgba(110,247,200,0.22);
+    border-radius: 50px;
+
+    color: var(--mint);
+    background: rgba(110,247,200,0.06);
+
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--mint);
+    box-shadow: 0 0 12px var(--mint);
+}
+
+.hero h1 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(48px, 7vw, 86px);
+    line-height: 0.98;
+    letter-spacing: -4px;
+    margin-bottom: 25px;
+}
+
+.hero h1 .mint {
+    color: var(--mint);
+}
+
+.hero h1 .lav {
+    color: var(--lavender);
+}
+
+.hero-text {
+    color: var(--muted);
+    max-width: 600px;
+    font-size: 17px;
+    margin-bottom: 32px;
+}
+
+.buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 13px 20px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--mint), #79CFFF);
+    color: #071A1F;
+}
+
+.btn-secondary {
+    background: var(--card);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+/* ================= PROFILE CARD ================= */
+
+.profile-card {
+    position: relative;
+    min-height: 430px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(circle at 50% 35%, rgba(110,247,200,0.15), transparent 35%),
+        var(--card);
+
+    border: 1px solid var(--border);
+    border-radius: 30px;
+
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.profile-card::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border: 1px solid rgba(184,164,255,0.18);
+    border-radius: 50%;
+    animation: rotate 18s linear infinite;
+}
+
+.profile-inner {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+
+    margin: auto auto 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        var(--mint),
+        var(--lavender)
+    );
+
+    color: #071A1F;
+
+    font-family: "Space Grotesk";
+    font-size: 46px;
+    font-weight: 700;
+
+    box-shadow: 0 0 60px rgba(110,247,200,0.18);
+}
+
+.profile-inner h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 27px;
+}
+
+.profile-inner p {
+    color: var(--muted);
+    margin-top: 5px;
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    padding: 6px 10px;
+    border-radius: 50px;
+    border: 1px solid var(--border);
+    font-size: 11px;
+    color: var(--muted);
+}
+
+/* ================= SECTIONS ================= */
+
+section {
+    padding: 110px 0;
+}
+
+.section-label {
+    color: var(--mint);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.section-title {
+    font-family: "Space Grotesk";
+    font-size: clamp(34px, 5vw, 52px);
+    letter-spacing: -2px;
+    margin-bottom: 50px;
+}
+
+.section-title span {
+    color: var(--lavender);
+}
+
+/* ================= ABOUT ================= */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 70px;
+}
+
+.about-number {
+    font-family: "Playfair Display";
+    font-size: 150px;
+    line-height: 0.8;
+    color: rgba(110,247,200,0.10);
+}
+
+.about-text {
+    color: var(--muted);
+    font-size: 17px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: var(--text);
+    font-weight: 600;
+}
+
+/* ================= STATS ================= */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.stat {
+    padding: 24px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+}
+
+.stat strong {
+    display: block;
+    font-family: "Space Grotesk";
+    font-size: 30px;
+    color: var(--mint);
+}
+
+.stat span {
+    font-size: 12px;
+    color: var(--muted);
+}
+
+/* ================= EXPERIENCE ================= */
+
+.timeline {
+    position: relative;
+    margin-left: 12px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: var(--border);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 40px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 0;
+    top: 6px;
+
+    width: 11px;
+    height: 11px;
+
+    border-radius: 50%;
+    background: var(--mint);
+    box-shadow: 0 0 15px rgba(110,247,200,0.6);
+}
+
+.timeline-card {
+    padding: 28px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    border-radius: 20px;
+    transition: 0.35s;
+}
+
+.timeline-card:hover {
+    transform: translateX(7px);
+    background: var(--card-hover);
+}
+
+.date {
+    color: var(--mint);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.timeline-card h3 {
+    font-family: "Space Grotesk";
+    margin: 7px 0;
+}
+
+.company {
+    color: var(--lavender);
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.timeline-card p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* ================= PROJECTS ================= */
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.project {
+    padding: 30px;
+    min-height: 280px;
+
+    border-radius: 22px;
+    border: 1px solid var(--border);
+    background: var(--card);
+
+    transition: 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+
+.project::after {
+    content: "↗";
+    position: absolute;
+    right: 25px;
+    top: 25px;
+
+    font-size: 25px;
+    color: var(--mint);
+
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-8px);
+    border-color: rgba(110,247,200,0.3);
+    box-shadow: var(--shadow);
+}
+
+.project:hover::after {
+    transform: translate(5px,-5px);
+}
+
+.project-number {
+    font-family: "Playfair Display";
+    color: rgba(184,164,255,0.45);
+    font-size: 17px;
+}
+
+.project h3 {
+    font-family: "Space Grotesk";
+    font-size: 25px;
+    margin: 18px 0 12px;
+}
+
+.project p {
+    color: var(--muted);
+    font-size: 14px;
+    max-width: 450px;
+}
+
+.project-result {
+    display: inline-block;
+    margin-top: 20px;
+
+    padding: 7px 12px;
+    border-radius: 50px;
+
+    background: rgba(110,247,200,0.08);
+    color: var(--mint);
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* ================= SKILLS ================= */
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+
+.skill {
+    padding: 24px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    border-color: rgba(184,164,255,0.3);
+}
+
+.skill-icon {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.skill h3 {
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.skill p {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+/* ================= EDUCATION ================= */
+
+.education {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 18px;
+}
+
+.edu-card {
+    padding: 27px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: var(--card);
+}
+
+.edu-year {
+    color: var(--mint);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.edu-card h3 {
+    margin: 12px 0 5px;
+    font-family: "Space Grotesk";
+}
+
+.edu-card p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* ================= CONTACT ================= */
+
+.contact-box {
+    text-align: center;
+    padding: 80px 30px;
+
+    border-radius: 30px;
+
+    background:
+        radial-gradient(circle at 30% 20%, rgba(110,247,200,0.10), transparent 30%),
+        radial-gradient(circle at 70% 80%, rgba(184,164,255,0.12), transparent 30%),
+        var(--card);
+
+    border: 1px solid var(--border);
+}
+
+.contact-box h2 {
+    font-family: "Playfair Display";
+    font-size: clamp(38px,6vw,65px);
+    margin-bottom: 15px;
+}
+
+.contact-box p {
+    color: var(--muted);
+    margin-bottom: 30px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 35px 0;
+    border-top: 1px solid var(--border);
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.socials {
+    display: flex;
+    gap: 18px;
+}
+
+.socials a {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.socials a:hover {
+    color: var(--mint);
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.8s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width: 850px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero-grid,
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 140px;
+    }
+
+    .profile-card {
+        min-height: 350px;
+    }
+
+    .stats,
+    .skills {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .education {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 500px) {
+
+    .hero h1 {
+        font-size: 48px;
+        letter-spacing: -2px;
+    }
+
+    .stats,
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 80px 0;
+    }
+
+    .profile-card {
+        min-height: 320px;
+    }
+
+    .avatar {
+        width: 120px;
+        height: 120px;
+        font-size: 38px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+    <a href="#home" class="logo">PALAK<span>.</span></a>
+
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <button class="theme-btn" onclick="toggleTheme()" id="themeBtn">☼</button>
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="container hero-grid">
+
+    <div class="reveal">
+
+        <div class="badge">
+            <span class="dot"></span>
+            Open to opportunities
+        </div>
+
+        <h1>
+            Digital ideas.<br>
+            <span class="mint">Real</span>
+            <span class="lav">impact.</span>
+        </h1>
+
+        <p class="hero-text">
+            Hi, I'm <strong>Palak Bhuria</strong> — an MBA student specializing
+            in Digital Marketing & Operations. I enjoy turning ideas into
+            brands, campaigns and meaningful business outcomes.
+        </p>
+
+        <div class="buttons">
+            <a href="#projects" class="btn btn-primary">
+                Explore My Work ↗
+            </a>
+
+            <a href="#contact" class="btn btn-secondary">
+                Let's Connect
+            </a>
+        </div>
+
+    </div>
+
+
+    <div class="profile-card reveal">
+
+        <div class="profile-inner">
+
+            <div class="avatar">
+                PB
+            </div>
+
+            <h2>Palak Bhuria</h2>
+
+            <p>Digital Marketing • Operations</p>
+
+            <div class="tags">
+                <span class="tag">Creative</span>
+                <span class="tag">Strategic</span>
+                <span class="tag">Curious</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="container">
+
+    <div class="section-label">01 — About</div>
+
+    <div class="about-grid reveal">
+
+        <div>
+            <div class="about-number">01</div>
+        </div>
+
+        <div class="about-text">
+
+            <h2 class="section-title">
+                More than just <span>a resume.</span>
+            </h2>
+
+            <p>
+                I'm currently pursuing an <span class="highlight">
+                MBA in Digital Marketing & Operations</span>, where I combine
+                creative thinking with analytical problem-solving.
+            </p>
+
+            <p>
+                My experience spans digital marketing, operations,
+                data analysis, quality processes and business projects.
+                I enjoy understanding how things work — and finding ways
+                to make them work better.
+            </p>
+
+            <p>
+                From building digital products and Shopify stores to
+                working with operational processes and data, I like
+                projects where ideas can be converted into measurable results.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="stats reveal">
+
+        <div class="stat">
+            <strong>₹10K+</strong>
+            <span>Digital Product Revenue</span>
+        </div>
+
+        <div class="stat">
+            <strong>4.56%</strong>
+            <span>Shopify Conversion Rate</span>
+        </div>
+
+        <div class="stat">
+            <strong>13</strong>
+            <span>Asian Countries Analysed</span>
+        </div>
+
+        <div class="stat">
+            <strong>50+</strong>
+            <span>ERP Records Managed</span>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+
+<div class="container">
+
+    <div class="section-label">02 — Experience</div>
+
+    <h2 class="section-title reveal">
+        Where I've <span>learned.</span>
+    </h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item reveal">
+
+            <span class="timeline-dot"></span>
+
+            <div class="timeline-card">
+
+                <span class="date">
+                    JUN — JUL 2026
+                </span>
+
+                <h3>Operations Intern</h3>
+
+                <div class="company">
+                    APJ Investments Pvt. Ltd.
+                </div>
+
+                <p>
+                    Worked with operations and quality processes,
+                    including production planning records, ERP data,
+                    documentation and 4M Change Management forms.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item reveal">
+
+            <span class="timeline-dot"></span>
+
+            <div class="timeline-card">
+
+                <span class="date">
+                    DIGITAL MARKETING
+                </span>
+
+                <h3>Digital Marketing Intern</h3>
+
+                <div class="company">
+                    ATravelQ
+                </div>
+
+                <p>
+                    Gained practical exposure to digital marketing,
+                    PPC, SEO and campaign-related activities.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item reveal">
+
+            <span class="timeline-dot"></span>
+
+            <div class="timeline-card">
+
+                <span class="date">
+                    CONSULTING EXPERIENCE
+                </span>
+
+                <h3>Marketing & Business Exposure</h3>
+
+                <div class="company">
+                    Aspire Consultants
+                </div>
+
+                <p>
+                    Developed practical exposure to business,
+                    marketing and client-oriented activities.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<div class="container">
+
+    <div class="section-label">03 — Selected Work</div>
+
+    <h2 class="section-title reveal">
+        Projects with <span>purpose.</span>
+    </h2>
+
+
+    <div class="projects">
+
+
+        <div class="project reveal">
+
+            <span class="project-number">01</span>
+
+            <h3>Glow & Go</h3>
+
+            <p>
+                Developed and launched a digital skincare product by
+                identifying target audience needs and market demand.
+            </p>
+
+            <span class="project-result">
+                ₹10K+ Revenue • 4% Conversion
+            </span>
+
+        </div>
+
+
+        <div class="project reveal">
+
+            <span class="project-number">02</span>
+
+            <h3>Lemura Bags</h3>
+
+            <p>
+                Built and managed a Shopify dropshipping store,
+                focusing on product positioning, digital marketing
+                and conversion optimisation.
+            </p>
+
+            <span class="project-result">
+                ₹11,250 Sales • 4.56% Conversion
+            </span>
+
+        </div>
+
+
+        <div class="project reveal">
+
+            <span class="project-number">03</span>
+
+            <h3>Life Expectancy Analysis</h3>
+
+            <p>
+                Analysed World Bank and WHO datasets across 13 Asian
+                countries using descriptive statistics, correlation
+                and regression analysis.
+            </p>
+
+            <span class="project-result">
+                Excel • Dashboards • 5-Year Forecast
+            </span>
+
+        </div>
+
+
+        <div class="project reveal">
+
+            <span class="project-number">04</span>
+
+            <h3>Rootsy — Brand the Unbranded</h3>
+
+            <p>
+                Developed a complete brand concept focused on positioning,
+                customer appeal and creating a differentiated identity.
+            </p>
+
+            <span class="project-result">
+                ₹12,000 Revenue
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<div class="container">
+
+    <div class="section-label">04 — Capabilities</div>
+
+    <h2 class="section-title reveal">
+        What I <span>work with.</span>
+    </h2>
+
+
+    <div class="skills">
+
+
+        <div class="skill reveal">
+            <div class="skill-icon">📊</div>
+            <h3>Data & Analytics</h3>
+            <p>Excel • Power BI • SPSS • Dashboards</p>
+        </div>
+
+
+        <div class="skill reveal">
+            <div class="skill-icon">⚙️</div>
+            <h3>Operations</h3>
+            <p>Process Improvement • Quality • Planning</p>
+        </div>
+
+
+        <div class="skill reveal">
+            <div class="skill-icon">📈</div>
+            <h3>Digital Marketing</h3>
+            <p>SEO • SEM • Google Ads • Meta Ads</p>
+        </div>
+
+
+        <div class="skill reveal">
+            <div class="skill-icon">🎨</div>
+            <h3>Creative Tools</h3>
+            <p>Canva • Figma • Shopify</p>
+        </div>
+
+
+        <div class="skill reveal">
+            <div class="skill-icon">🔎</div>
+            <h3>Research</h3>
+            <p>Market Research • Secondary Research</p>
+        </div>
+
+
+        <div class="skill reveal">
+            <div class="skill-icon">💡</div>
+            <h3>Strategy</h3>
+            <p>Branding • STP • Business Analysis</p>
+        </div>
+
+
+        <div class="skill reveal">
+            <div class="skill-icon">🧩</div>
+            <h3>Problem Solving</h3>
+            <p>Analytical Thinking • Process Thinking</p>
+        </div>
+
+
+        <div class="skill reveal">
+            <div class="skill-icon">🚀</div>
+            <h3>Execution</h3>
+            <p>Planning • Implementation • Optimisation</p>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+<div class="container">
+
+    <div class="section-label">05 — Education</div>
+
+    <h2 class="section-title reveal">
+        Academic <span>journey.</span>
+    </h2>
+
+
+    <div class="education">
+
+        <div class="edu-card reveal">
+
+            <span class="edu-year">
+                2025 — 2027
+            </span>
+
+            <h3>MBA</h3>
+
+            <p>
+                Digital Marketing & Operations
+            </p>
+
+            <p>
+                Lovely Professional University
+            </p>
+
+        </div>
+
+
+        <div class="edu-card reveal">
+
+            <span class="edu-year">
+                2019 — 2022
+            </span>
+
+            <h3>B.Com</h3>
+
+            <p>
+                Business Finance & Economics
+            </p>
+
+            <p>
+                Vyas College, Jodhpur
+            </p>
+
+        </div>
+
+
+        <div class="edu-card reveal">
+
+            <span class="edu-year">
+                SCHOOL
+            </span>
+
+            <h3>Intermediate</h3>
+
+            <p>
+                Holi Spirit Sr. Sec. School
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="container">
+
+    <div class="contact-box reveal">
+
+        <div class="section-label">
+            06 — Contact
+        </div>
+
+        <h2>
+            Let's create something
+            <span style="color:var(--mint)">meaningful.</span>
+        </h2>
+
+        <p>
+            I'm always open to conversations about opportunities,
+            projects and ideas.
+        </p>
+
+        <div class="buttons" style="justify-content:center">
+
+            <!-- EMAIL -->
+            <a
+                href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=bhuriapalak75%40gmail.com&su=Portfolio%20Contact"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary">
+                Email Me ↗
+            </a>
+
+            <!-- PHONE -->
+            <a
+                href="tel:+917807794958"
+                class="btn btn-secondary">
+                +91 7807794958 ↗
+            </a>
+
+            <!-- LINKEDIN -->
+            <a
+                href="https://www.linkedin.com/in/palakbhuria19/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-secondary">
+                LinkedIn ↗
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container footer-inner">
+
+    <p>
+        © 2026 Palak Bhuria. Built with curiosity & code.
+    </p>
+
+    <div class="socials">
+
+        <a href="#home">
+            Back to top ↑
+        </a>
+
+    </div>
+
+</div>
+
+</footer>
+
+
+<script>
+
+/* DARK / LIGHT MODE */
+
+function toggleTheme() {
+
+    document.body.classList.toggle("light");
+
+    const btn = document.getElementById("themeBtn");
+
+    if(document.body.classList.contains("light")) {
+        btn.textContent = "☾";
+    } else {
+        btn.textContent = "☼";
+    }
+
+}
+
+
+/* SCROLL REVEAL */
+
+const observer = new IntersectionObserver(
+
+    entries => {
+
+        entries.forEach(entry => {
+
+            if(entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+
+        });
+
+    },
+
+    {
+        threshold: 0.12
+    }
+
+);
+
+
+document.querySelectorAll(".reveal").forEach(
+    element => observer.observe(element)
+);
+
+</script>
+
+</body>
+</html>
